@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_home</title>
+    <link rel="stylesheet" href="./css/import.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'egm2vlw',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $('.tab li a').click(function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active')
+                }else{
+                $(this).addClass('active')               
+                }       
+            })              
+        })
+    </script>
+
+
+<style>
+    /* .product_list {display: none;} */
+    /* .product_list.active{display: block;} */
+    .tab li a.active::after{display: block;}
+</style>
+
+</head>
+<body>
+    <div class="wrap_product_home">
+        
+        <div class="width1900">   
+            <header>
+                <ul>
+                    <li> <a href="">LOGIN </li></a>
+                    <li> <a href="">CART </li></a>
+                    <li> <a href="">ORDER </li></a>
+                    <li> <a href="">JOIN </li></a>
+                    <li> <a href="">MY PAGE </li></a>
+                </ul>
+                <div>
+                    <h1>
+                        <a href="">
+                            <img src="./img/main/logo-white.svg" alt="">
+                        </a>
+                    </h1>
+                
+                    <nav>
+                        <ul>
+                            <li> 
+                                <a href=""> 커피 </a>
+                                <ul>
+                                    <li>버츄오 커피</li>
+                                    <li>오리지널 커피</li>
+                                </ul>
+                            </li>
+                            <li> 
+                                <a href="">지속가능성 </a>
+                            </li>
+                            <li> 
+                                <a href="">서비스 </a>
+                                <ul>
+                                    <li>제품주문</li>
+                                    <li>재활용</li>
+                                </ul>
+                            </li>
+                            <li> <a href="">F&Q</a>
+                            </li>
+                            <li> <a href=""> 뉴스 </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="sub_banner">
+            <div class="width1900px">
+                <div>
+                    <h1> shop </h1>
+                    <p> 네스프레소 버츄오 커피 캡슐</p>
+                </div>
+            </div>           
+        </div>
+
+        <div class="width1270"> 
+            <section class="product_home_tab">
+                <ul>
+                    <li> <a href="./product_home.html"> 슬리브팩</a></li>
+                    <li> <a href="./product_home2.html"> 리바이빙<br>오리진</a></li>
+                    <li> <a href="./product_home3.html"> 바리스타<br>크리에이션</a></li>
+                    <li> <a href="./product_home4.html"> 마스터<br>오리진</a></li>
+                    <li> <a href="./product_home5.html"> 머그</a></li>
+                    <li> <a href="./product_home6.html"> 에스프레소</a></li>
+                    <li> <a href="./product_home7.html"> 더블<br>에스프레소</a></li>
+                    <li> <a href="./product_home8.html"> 알토</a></li>
+                    <li> <a href="./product_home9.html"> 그랑룽고</a></li>
+                </ul>
+                <div class="product_list">
+                    <ul class="product_riviving">
+                        <li><a href=""> <img src="./img/product_home/2_riviving/riviving_1.png">
+                        <span> 리바이빙 오리진 버츄오 6 슬리브 팩 </span>
+                        <mark> 83,400원 </mark>    
+                        </a>
+                    </li>
+                        <li><a href=""> <img src="./img/product_home/2_riviving/riviving_2.png">
+                        <span> 아마하 아웨 우간다 </span>
+                        <mark> 48,200원 </mark>    
+                        </a>
+                    </li>
+                        <li><a href=""> <img src="./img/product_home/2_riviving/riviving_3.png">
+                        <span> 에스페란자 데 콜롬비아 </span>
+                        <mark> 45,800원 </mark>    
+                        </a>
+                    </li>
+                        <li><a href=""> <img src="./img/product_home/2_riviving/riviving_4.png">
+                        <span> 타무카 무 짐바브웨 </span>
+                        <mark> 43,100원 </mark>    
+                        </a>
+                    </li>
+                    </ul>
+            </section>    
+        </div>   
+    
+</body>
+</html>

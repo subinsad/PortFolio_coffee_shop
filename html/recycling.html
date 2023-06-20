@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/import.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'egm2vlw',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+<script>
+        
+    $(document).ready(function(){
+        $('.recycling_2 ul li:nth-of-type(2n-1)').click(function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
+                $(this).next().css('display','none')
+            }else{
+                $(this).addClass('active')
+                $(this).next().css('display','block')                
+            }       
+        })
+
+        $('.recycling_fore_box li').click(function(){
+            $(this).find('.recycling_box').addClass('active')
+            $(this).find('.recycling_box').prev().css('display','none')
+
+        })
+    })
+
+</script>
+
+<style>
+    .fore_box li.active{display: block;}
+</style>
+    <title>recycling</title>
+</head>
+<body>
+    <div class="wrap_recycling">
+        <header>
+            <ul>
+                <li> <a href="">LOGIN </li></a>
+                <li> <a href="">CART </li></a>
+                <li> <a href="">ORDER </li></a>
+                <li> <a href="./join.html">JOIN </li></a>
+                <li> <a href="./mypage.html">MY PAGE </li></a>
+            </ul>
+            <div>
+                <h1>
+                    <a href="./index.html">
+                        <img src="./img/main/logo-white.svg" alt="">
+                    </a>
+                </h1>
+            
+                <nav>
+                    <ul>
+                        <li> 
+                            <a href=""> 커피 </a>
+                            <ul>
+                                <li><a href="./product_home.html"> 버츄오 커피</li></a>
+                                <li><a href="./product_home.html"> 오리지널 커피</li></a>
+                            </ul>
+                        </li>
+                        <li> 
+                            <a href="./brand.html">지속가능성 </a>
+                        </li>
+                        <li> 
+                            <a href="./recycling.html">재활용 </a>
+                        </li>
+                        <li> <a href="">F&Q</a>
+                        </li>
+                        <li> <a href="./news.html"> 뉴스 </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="width1270">
+            <section class="recycling_1">
+                <h2 class="en_font"> nespresso recycling</h2>
+                <div class="nespresso_recycling">
+                    <div class="recycling_click">
+                        <div class="click_alum">
+                            <a href=""><span> 알루미늄</span>
+                               <br> 자세히보기</a>
+                        </div>
+                        <img src="./img/recycling/aluminium-ol_L.png" alt="">
+                    </div>
+
+                    <div  class="recycling_click">
+                        <div class="click_coffee">
+                            <a href=""><span> 커피가루</span>
+                               <br> 자세히보기</a>
+                        </div>
+                        <img src="./img/recycling/coffee.png" alt="">
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="fore_box">
+                <h3 class="k_font"> 전 지구적 노력을 요하는재활용 - 국가별 사례 소개  </h3>
+                    <ul class="recycling_fore_box">
+                        <li> 
+                            <figure>
+                                <img src="./img/recycling/box4-1.png" alt="">
+                                <figcaption>
+                                    <dl>
+                                        <dt> <img src="./img/recycling/box4-1-1.png"> </dt>   
+                                        <dd> 아르헨티나</dd>
+                                    </dl>
+                                    
+                                    <div class="recycling_box">
+                                        <img src="./img/recycling/box4-1-2.png" alt="">                              
+                                        <strong> 아르헨티나</strong> 
+                                        <p> 네스프레소는 우에르타 니노 재단과 
+                                            공동으로 협력하여 농촌 지역에 지속 
+                                            가능한 솔루션을 제공하기 위해 시골 학교 
+                                            부지에 공동 채소밭을 조성하고 있습니다. 
+                                            커피 가루를 분리한 캡슐의 알루미늄은 
+                                            새로운 물건으로 재탄생하게 됩니다. 
+                                            네스프레소는 알루미늄뿐 아니라 분리한 
+                                            커피 가루(커피박)도 재활용합니다. 
+                                            커피박은 시골 학교 채소밭 100 곳의 
+                                            개발을 위한 퇴비로 재사용됩니다.</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li> 
+                            <figure>
+                                <img src="./img/recycling/box4-2.png" alt="">
+                                    <figcaption>
+                                        <dl>
+                                            <dt> <img src="./img/recycling/box4-2-1.png"> </dt>   
+                                            <dd> 스위스</dd>
+                                        </dl>
+
+                                        <div class="recycling_box">
+                                            <img src="./img/recycling/box4-2-2.png" alt="">
+                                            <strong>스위스 </strong>
+                                                <p> 당신이 사용한 캡슐의 알루미늄은 무한히 
+                                                재활용될 수 있으며 다양한 형태를 취할 수 
+                                                있습니다. 이번에는 펜의 몸통 부분에 
+                                                재활용된 네스프레소 캡슐의 알루미늄 
+                                                25%를 함유한 까렌다쉬 펜이 신상 
+                                                한정판으로 출시되었습니다.</p>
+                                        </div>
+                                    </figcaption>
+                            </figure>
+                        </li>
+
+                        <li> 
+                            <figure>
+                                <img src="./img/recycling/box4-3.png" alt="">
+                                    <figcaption>
+                                        <dl>
+                                            <dt> <img src="./img/recycling/box4-3-1.png"> </dt>   
+                                            <dd>스페인</dd>
+                                        </dl>
+
+                                        <div class="recycling_box">
+                                            <img src="./img/recycling/box4-3-2.png" alt="">
+                                            <strong> 스페인</strong>
+                                            <p>재활용된 캡슐의 커피박이 해를 거듭해 
+                                                재활용 여정을 이어나갑니다. 에브로 
+                                                삼각주의 논을 거치는 이 자선 여정은 
+                                                스페인 푸드 뱅크 연맹(the Spanish 
+                                                Foodbank Federation)에서 유종의 
+                                                미를 거두게 됩니다. </p>
+                                        </div>
+                                    </figcaption>
+                            </figure>
+                        </li>
+
+                        <li> 
+                            <figure>
+                                <img src="./img/recycling/box4-4.png" alt="">
+                                    <figcaption>
+                                        <dl>
+                                            <dt> <img src="./img/recycling/box4-4-1.png"> </dt>   
+                                            <dd>이탈리아 </dd> 
+                                        </dl>
+
+                                        <div class="recycling_box">
+                                            <img src="./img/recycling/box4-4-2.png" alt=""> 
+                                            <strong>이탈리아</strong>
+                                            <p> "커피콩에서 쌀알이 되기까지의 여정"»은 
+                                                지구 반대편에서 귀히 자란 커피콩이 
+                                                도움이 필요한 이들의 식탁에 오르는 
+                                                쌀알이 되기까지의 여정을 말합니다. 
+                                                (네스프레소와 당신의 선택이 더해진) 
+                                                우리의 선택으로 이 여정이 가능케 
+                                                되었습니다. 우리가 지속하길 원한다면 
+                                                영원히 끝나지 않을 이 여정의 스토리를 
+                                                들어보세요</p>
+                                        </div>
+                                    </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                
+            </section>
+                
+
+            <section class="recycling_2">
+                <h4> 자주 묻는 질문과 답변  </h4>
+                <ul>
+                    <li>네스프레소 커피 캡슐은 재활용이 되나요?</li>
+                    <li>네스프레소 캡슐은 알루미늄으로 만듭니다. 알루미늄은 네스프레소 커피의 신선함과 품질을 
+                        보호할 수 있는 최상의 재료이며 무한히 재활용 가능한 장점을 가지고 있습니다. 네스프레소는 
+                        25년 이상 네스프레소 전용 재활용 방식을 고안하기 위해 투자를 지속해왔습니다. 우리는 고객들이 
+                        네스프레소 캡슐을 재활용할 수 있는 가능한 쉽고 편리한 방식을 찾기 위해 노력하고 있습니다.
+                    </li>
+
+                    <li> 네스프레소 고객들이 어떻게 사용한 캡슐을 재활용할 수 있나요? </li>
+                    <li>네스프레소는 독자적인 재활용 프로그램을 가지고 있으며 
+                        고객들이 이미 사용한 캡슐을 재활용 할 수 있는 쉽고 편리한 
+                        방법을 다양하게 제시하고 있습니다. 우리는 전세계에 10만 
+                        개의 캡슐 재활용 수거 지점과 편리한 택배 및 우편 서비스 
+                        그리고18개국에서 Recycle@home(직접 수거) 프로그램을 
+                        운영하고 있습니다. 우리의 목표는 네스프레소의 알루미늄 
+                        캡슐이 기존 재활용품 수거 제도에 포함되는 것이며, 정부 및 
+                        지역 당국과 이 목표를 달성하기 위해 함께 일하고 있습니다.</li>
+
+                    <li> 재활용된 알루미늄과 커피 찌꺼기는 어떻게 하나요? </li>
+                    <li>재활용을 위해 수거된 캡슐들은 알루미늄 가치사슬로 
+                        되돌아갑니다. 그곳에서 이들은 자동차 엔진, 자전거, 컴퓨터, 
+                        음료 캔, 또는 새로운 커피 캡슐 등 다양한 제품을 만드는 데 
+                        사용됩니다. 커피 찌꺼기는 영양분이 풍부한 비료 또는 
+                        녹색에너지를 만들기 위해 재사용합니다.                    
+                    </li>
+
+                    <li> 네스프레소가 캡슐을 만들 때 알루미늄을 사용하는 이유는 무엇인가요? </li>
+                    <li>우리가 알루미늄을 사용하는 이유는 알루미늄이야말로 
+                        네스프레소 커피의 신선함, 풍미, 품질을 모두 보호할 수 있는 
+                        최고의 재료이기 때문입니다. 알루미늄은 자연발생적으로 
+                        생겨나는 금속이고 무한히 재활용이 가능합니다. 알루미늄 
+                        덕분에 신선도와 풍미를 보호하기 위해 추가적인 과도한 
+                        포장이 필요 없어졌습니다. 재활용된 알루미늄은 매우 
+                        다양하게 사용됩니다. 제품 생산에 사용된 알루미늄의 75%가 
+                        오늘날 여전히 사용되고 있습니다. 알루미늄은 식품 포장에서 
+                        자동차, 컴퓨터, 창틀에서 자전거에 이르기까지 다양한 
+                        제품에 사용됩니다. </li>
+
+                    <li>네스프레소 캡슐은 어떻게 재활용이 되나요? </li>
+                    <li>1. 네스프레소의 독자적인 재활용 프로그램을 통해 사용된 
+                        캡슐은 네스프레소의 재활용 시설로 보내집니다.
+                        
+                        2. 이들은 작은 조각으로 잘려 알루미늄 캡슐에서 커피 찌꺼기를 분리합니다.
+                        
+                        3. 커피 찌꺼기는 녹색 에너지 또는 영양분이 풍부한 비료로 탈바꿈합니다.
+                        
+                        4. 빈 캡슐은 열을 가해 플라스틱 코팅과 다른 재료들을 녹여 없앱니다.
+                        
+                        5. 순수한 알루미늄이 남게 되면 녹여서 재활용합니다.
+                    </li>
+
+                    <li>네스프레소 캡슐은 재활용된 알루미늄으로 만들어지나요? </li>
+                    <li>네스프레소 캡슐은 특별한 등급의 알루미늄을 필요로 합니다. 
+                        이 특별한 등급에는 재활용된 알루미늄이 있을 가능성이 매우 
+                        낮습니다. 실제로 알루미늄 등급을 고려한다면 재활용된 
+                        네스프레소 캡슐의 알루미늄이 최고의 자원입니다. 우리는 
+                        실현 가능하고 환경적으로 타당하다면 재활용된 네스프레소 
+                        캡슐을 사용하여 새로운 캡슐을 만듭니다.</li>
+                    
+                    <li>대안으로 플라스틱 캡슐은 고려해보셨나요?</li>
+                    <li>플라스틱 캡슐은 일반적으로 신선도를 유지하기 위해 
+                        추가적인 포장지를 덧씌워야 하는 등 더 많은 포장이 
+                        필요합니다. 역설적이게도 이런 추가적인 포장지는 주로 
+                        알루미늄으로 만들어집니다. 따라서 우리는 알루미늄이 
+                        네스프레소 캡슐을 위해 보다 지속 가능한 재료라고 
+                        생각합니다. 왜냐하면 알루미늄은 추가 포장이 필요 없고 
+                        네스프레소 커피의 신선도와 품질을 보존하며 무한히 
+                        재활용이 가능하기 때문입니다.</li>
+                    
+                    <li>캡슐 커피의 탄소발자국이란 무엇인가요?</li>
+                    <li>우리는 캡슐 커피가 지속가능성 관점에서는 타당하다고 
+                        생각합니다. 우리는 생산에서 재활용까지 전 주기에 걸쳐 
+                        배출하는 이산화탄소량을 측정하는 제품 주기 전과정 평가
+                        (LCA) 방식을 사용하여 네스프레소 제품의 탄소 발자국을 
+                        측정합니다. 커피 종자 선별에서 한 잔의 커피를 음미하는 
+                        순간까지 제품 수명 주기의 모든 단계에서 환경에 대한 
+                        영향을 최소화하기 위해 노력하고 있습니다. 2009년 이후
+                        우리는 이미 네스프레소 한 잔의 탄소발자국을 거의 20% 
+                        가까이 감소시켰습니다.</li>
+
+                    <li>캡슐 커피가 불필요한 쓰레기를 만들어내지 않나요?</li>
+                    <li>우리는 제품주기 전과정 평가(LCA) 방식을 사용하여 제품이 
+                        환경에 미치는 영향을 측정합니다. 이 조사에 따르면 커피 
+                        재배 과정이 가장 큰 영향을 미치며 그 다음으로 커피 머신 
+                        사용 단계입니다. 그리고 환경에 영향을 미치는 세번째 주요 
+                        요소는 포장입니다. 네스프레소 커피 머신과 함께라면, 
+                        네스프레소 고객은 어떠한 자원의 낭비도 없이 한 잔의 
+                        커피를 추출하기 위해 필요한 정확한 양의 물과 커피, 
+                        에너지를 사용하고 음식, 물, 에너지 낭비를 최소화할 수 
+                        있습니다. 모든 자원을 정밀하게 계산하여 적용하는 
+                        네스프레소 커피 머신을 제대로 활용하면 쓰레기를 줄이는 
+                        것은 물론 많은 경우 캡슐 커피를 위해 사용되는 추가 포장을 
+                        보상하고도 남습니다.
+                        </li>
+                    
+                    <li>기업 고객은 어떻게 캡슐을 재활용하나요?</li>
+                    <li>네스프레소의 기업용 커피 캡슐은 개인 소비자가 집에서 
+                        즐기는 네스프레소 커피 캡슐과 마찬가지 방식으로 재활용이 
+                        가능합니다. 캡슐의 수거와 재활용은 기업 고객의 사정에 
+                        따라 협의하여 진행합니다. 그리고 네스프레소가 사업 중인 
+                        모든 국가에서 이들 또한 재활용을 할 수 있도록 다양한 
+                        맞춤식 서비스를 제공합니다.</li>
+
+
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <div class="width1270">
+                <div class="company">                           
+                    <select name="language" id="">
+                        <option value="korean"> 한국어 </option>
+                        <option value="english"> english</option>
+                    </select>
+
+                    <ul>
+                        <li class="cookie">
+                            <ul>
+                                <li>
+                                    <a href=""> 판매이용약관 </a> 
+                                </li>
+
+                                <li>
+                                    <a href=""> 개인정보처리방침 </a>
+                                </li>
+
+                                <li>
+                                    <a href=""> 쿠키 </a>
+                                </li>
+                            
+                                <li>
+                                    <a href=""> 고객지원 </a>
+                                </li>
+                            
+                                <li>
+                                    <a href=""> 네스프레소 프로페셔널 </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="coffee">
+                            <ul>
+                                <li>
+                                    <a href=""> 커피레시피 </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="./coffee.html"> 용어찾기  </a>
+                                </li>
+                            
+                                <li>
+                                    <a href=""> 회사소개 </a>
+                                </li>
+                            
+                                <li>
+                                    <a href=""> 채용 </a>
+                                </li>
+                            
+                                <li>
+                                    <a href=""> 사이트맵 </a>
+                                </li>
+                            
+                                <li>
+                                    <a href=""> 웹접근성 </a>
+                                </li>                            
+                            </ul>
+                        </li>
+                        <li>
+                         Nespresso.S.A2021
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width1900">
+                <div class="footer_span">
+                <p>상호 : 네슬레코리아 유한책임회사 대표자 : 카스텐 퀴메 사업자 등록번호 : 110-86-10100
+                <span>통신판매업신고 2014 서울서대문0247 <br>
+                채무지급보증안내 대표번호 : 080-734-1111</span>
+                이메일 : club.korea@nespresso.com 주소 : 서울시 서대문구 충정로70 웨스트게이트타워 16층</p>
+                </div>
+            </div>            
+        </footer>
+        
+
+    </div>
+    
+</body>
+</html>

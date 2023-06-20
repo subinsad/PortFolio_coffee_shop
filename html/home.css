@@ -1,0 +1,117 @@
+body{margin: 0; padding: 0; background-color: white;}
+
+/* 영역 가로 퍼센트로 나눔 */
+.home_wrap{width: 75%; float: left;}
+aside{width: 25%; height: 100vw; display: block; float: left; background-color:#fd9f28 ;}
+
+/* 첫번째 li영역 */
+.home_wrap div ul li{
+    list-style: none;
+}
+
+.home_wrap div .wrap{margin-left: 4%;}
+
+.home_wrap{
+    width: 75%;
+    float: left;
+}
+
+/* 첫번째 li span */
+.home_wrap div ul li span{
+    font-size: 20px; font-weight: 500;
+    display: block;
+}
+
+/* li밑에 노란 선 */
+.home_wrap div ul li .line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #fd9f28;
+}
+
+/* 제목 중앙으로 */
+.home_wrap h1{text-align: center;}
+
+/* 두번째 li 노란 점 */
+.home_wrap div ul li ul li::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%; 
+    margin: 0 10px;
+    background-color: #fd9f28;
+}
+
+.home_wrap div ul li ul{ padding: 0;}
+
+/* 두번째 li 간격 */
+.home_wrap div ul li ul li{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* 홈피 밑줄삭제 */
+.icon div a{text-decoration: none;}
+
+/* aside영역 */
+
+/* 사진넣는부분(흰색으로 채워넣음) */
+.name{
+    height: 20%;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 100%;
+    background-color: white;
+    background-image: url(/name.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+}
+
+/* 이름 */
+aside p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* 이름 밑 흰선 */
+aside .line::after{
+    content: ''; display: inline-block; width: 95%; height: 2px;
+    background-color: white;
+}
+
+/* 아이콘영역 */
+
+aside .icon div{
+    width: 25%;
+    width: calc();
+    padding: 10px 0px;
+    margin: 0 auto;
+}
+
+aside .icon div img{
+    background-color: rgb(255, 205, 74);
+    background-size: cover;
+    width: 60%;
+    padding: 20px;
+    border: none;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+/* 아이콘 밑 글씨 */
+aside .icon p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 17px;
+    display: block;
+    color: white;
+    padding: 5px 0;
+}
+
+aside .icon a{text-decoration: none;}
