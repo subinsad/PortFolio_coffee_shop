@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/import.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu1').click(function () {
+                if ($('.menu1').hasClass('active')) {
+                    $('.menu1').removeClass('active');
+                } else {
+                    $('.menu1').addClass('active');
+                }
+
+
+            })
+        })
+
+        function hover(element, path) {
+            element.setAttribute('src', './img/main/best_n_1.png');
+            element.style.opacity = '1', element.style.transition = '0.5'
+
+        }
+
+        function unhover(element) {
+            element.setAttribute('src', './img/main/1x/vertuo_g1.png');
+            element.style.opacity = '0.8', element.style.transition = '0.5'
+            element.stop().animate({ opacity: 1 }, 500);
+        }
+
+        $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
+
+        $("#menu-icon").on("click", function () {
+            $("nav").slideToggle();
+            $(this).toggleClass("active");
+        });
+
+
+
+
+    </script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'egm2vlw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <title>best recipe3</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <ul>
+                <li> <a href="./login.jsp">LOGIN </li></a>
+                <li> <a href="./cart.html">CART </li></a>
+                <li> <a href="./mypage_order.html">ORDER </li></a>
+                <li> <a href="./join_ok_d.jsp">JOIN </li></a>
+                <li> <a href="./mypage.html">MY PAGE </li></a>
+            </ul>
+            <div>
+                <div class="wrap_menu">
+                    <div class="menu1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+
+                <nav>
+                    <h1>
+                        <a href="./index.jsp">
+                            <img src="./img/main/logo-fin.png" alt="">
+                        </a>
+                    </h1>
+
+                    <ul class="header_nav">
+
+                        <li class="dropdown">
+                            <a href="">스토리</a>
+                            <ul>
+                                <li><a href="./story.html">소개</a></li>
+                                <li><a href="./coffee.html">커피용어</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">커피캡슐</a>
+                            <ul>
+                                <li><a href="./product_home.html">네스프레소</a></li>
+                                <li><a href="./product_home_illy.html">일리</a></li>
+                                <li><a href="./product_home_star.html">스타벅스</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">레시피</a>
+                            <ul>
+                                <li><a href="./bbs.jsp">게시판</a></li>
+                                <li><a href="./best_recipe1.html">구매하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./brand.html">재활용</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">고객센터</a>
+                            <ul>
+                                <li><a href="./f&q.html">faq</a></li>
+                                <li><a href="./event.html">news</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    </header>
+
+    <div class="sub_banner" id="best_recipe_bg">
+        <div class="width1900px">
+            <div>
+                <h2> Recipe </h2>
+                <p> 여러분과 함께 만드는 레시피사이트 입니다.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <section>
+        <div class="width1270">
+            <h3>레시피 랭킹 순위</h3>
+            <div class="vertuo_line">
+                <ul>
+                    <li>
+                        <div class="vertuo">
+                            <a href="./best_recipe1.html">
+
+                                <img src="./img/main/1x/vertuo_g1.png" class="main_b"
+                                onmouseover="this.src='./img/main/best_n_1.png'"
+                                onmouseout="this.src='./img/main/1x/vertuo_g1.png'">
+                                <span> 1등 </span><br>
+                                <mark> 카페라떼 </mark>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="vertuo">
+                            <a href="./best_recipe2.html">
+                                <img src="./img/main/1x/vertuo_g2.png" alt=""
+                                    onmouseover="this.src='./img/main/best_n_2.png'"
+                                    onmouseout="this.src='./img/main/1x/vertuo_g2.png'">
+                                <span> 2등 </span><br>
+                                <mark> 모카라떼 </mark>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="vertuo">
+                            <a href="./best_recipe3.html">
+                                <img src="./img/main/best_n_3.png" alt="">
+                                <span> 3등 </span>
+                                <mark> 헤이즐넛 아메리카노 </mark>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="vertuo">
+                            <a href="./best_recipe4.html">
+                                <img src="./img/main/1x/vertuo_g4.png" alt=""
+                                    onmouseover="this.src='./img/main/best_n_4.png'"
+                                    onmouseout="this.src='./img/main/1x/vertuo_g4.png'">
+                                <span> 4등 </span>
+                                <mark> 크림라떼 </mark>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+
+                <div class="best_recipe">
+                    <div class="best_recipe_box">
+                        <img src="./img/best_recipe/best3.png" alt="">
+                        <div class="best_recipe_img">
+                            <p>천니 (1000nl@naver.com) </p>
+
+                            <p>
+                                달달한 초코의 맛과 적당한 커피의 맛이
+                                계속 생각나서 매일 먹고있어요~!
+                            </p>
+
+                            <p> ⭐⭐⭐⭐ </p>
+                        </div>
+                    </div>
+
+                    <div class="best_recipe_box" id="best_recipe_text">
+                        <div class="recipe_text1">
+                            <h4> 헤이즐넛 아메리카노 세트 </h4>
+                            <p> 부드럽고 고소한 향의 헤이즐넛 아메리카노 </p>
+                        </div>
+
+                        <div class="recipe_text2">
+                            <ul> 레시피
+                                <li>
+                                    1. 헤이즐넛 시럽20ml와 아메리카노 1샷을 섞어줍니다.
+                                </li>
+                                <li>
+                                    2. 물을 부어줍니다.
+                                </li>
+                                <li>
+                                    3. 물과 샷이 섞이게 저어줍니다.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div  class="recipe_text3">
+                            <ul class="text3_1">
+                                <li>
+                                    구성 상품
+                                </li>
+                                <li>
+                                    헤이즐넛시럽(1200원) / 에스프레소캡슐(990원)
+                                </li>
+
+                            </ul>
+
+                            <ul class=" text3_2"> 
+                                <li>
+                                대용량 구매   
+                                </li>
+                                <div>
+                                    <li>
+                                        <input type="checkbox"> 
+                                    </li>
+                                    <li>
+                                        <img src="./img/best_recipe/bottle.png" alt="">
+                                        <p>헤이즐넛시럽</p> <p>4000원</p>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox"> 
+                                    </li>
+                                    <li>
+                                        <img src="./img/best_recipe/capsule.png" alt="" class="checkbox_capsule">
+                                        <p>캡슐</p> <p>6900원</p>
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <mark> 2,190원 </mark>
+                        </div>
+
+                        <a href="./cart.html"><input type="button" name="" id="" value="구매하기"></a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+            
+
+
+    <footer>
+        <div class="width1900">
+            <div class="footer_span">
+                <p>상호 : Deeply 대표자 : 박수빈 등록번호 : 110-86-10100
+                    <span>통신판매업신고 2014 서울서대문0247 </span> <br>
+                    이메일 : deeply@naver.com 주소 : 경기도 화성시 봉담읍 삼천병마로 1182
+                </p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

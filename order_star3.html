@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'egm2vlw',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+      <script>
+
+        $(document).ready(function(){
+            $('.order_click h4').click(function(){
+                if($('.text_click ul').hasClass('active')){
+                    $('.text_click ul').css('display','none');
+                    $('.order_click h4').removeClass('active');
+                    $('.text_click ul').removeClass('active');
+                }else{
+                    $('.text_click ul').addClass('active');
+                    $('.order_click h4').addClass('active');
+                    $('.text_click ul').css('display','block');
+                }                
+            })
+        })
+      </script>
+
+</head>
+<body>
+    <div class="wrap_order">
+        <header>
+            <ul>
+                <li> <a href="./login.jsp">LOGIN </li></a>
+                <li> <a href="./cart.html">CART </li></a>
+                <li> <a href="./mypage_order.html">ORDER </li></a>
+                <li> <a href="./join_ok_d.jsp">JOIN </li></a>
+                <li> <a href="./mypage.html">MY PAGE </li></a>
+            </ul>
+            <div>
+                <h1>
+                    <a href="./index.jsp">
+                        <img src="./img/main/logo-fin.png" alt="">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul class="header_nav">
+                        <li class="dropdown">
+                            <a href="">스토리</a>
+                            <ul>
+                                <li><a href="./story.html">소개</a></li>
+                                <li><a href="./coffee.html">커피용어</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">커피캡슐</a>
+                              <ul>
+                                <li><a href="./product_home.html">네스프레소</a></li>
+                                <li><a href="./product_home_illy.html">일리</a></li>
+                                <li><a href="./product_home_star.html">스타벅스</a></li>
+                              </ul>        
+                          </li>
+                          <li class="dropdown">
+                            <a href="">레시피</a>
+                              <ul>
+                                <li><a href="./bbs.jsp">게시판</a></li>
+                                <li><a href="./best_recipe1.html">구매하기</a></li>
+                              </ul>        
+                          </li>
+                          <li>
+                            <a href="./brand.html">재활용</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="">고객센터</a>
+                            <ul>
+                                <li><a href="./f&q.html">faq</a></li>
+                                <li><a href="./event.html">news</a></li>
+                              </ul>   
+                          </li>
+                        </ul>
+                      </nav>
+            </div>
+        </header>               
+
+        <section class="product_order">
+            <div class="width1270">
+                <div class="product_order_img">
+                    <img src="./img/order_star/star1/star_3.webp" alt="">
+                </div>    
+                <div class="product_text">
+                    <h2> 스타벅스® 하우스 블렌드 </h2>
+                    <p>풍부함과 토피넛향 </p>
+                    <mark> 8,700원 </mark>
+                    <table>
+                        <tr>
+                            <td class="order_illy"> 
+                                <p>1 슬리브 (12캡슐, 최소주문수량):</p> 
+                            </td>
+                            <td>
+                                <input type="number" name="" value="18">
+                            </td>
+                            <td>
+                                <p>8,700원</p>
+                            </td>
+                        </tr>                    
+                    </table>
+                    <div class="total">
+                        <span>total</span>
+                        <mark>8,700원</mark>
+                        <p> (12개) </p>
+                    </div>
+                    
+                    <div class="buybox">
+                        <a href=""> 구매하기</a>
+                        <a href=""> 장바구니 </a>
+                        <a href=""> 관심상품 </a>
+                    </div>
+
+                    <div class="naver">
+                        <div class="pay">
+                            <p>naver<br>
+                                <span> 네이버id로 간편구매<br>
+                                네이버페이</span>
+                            </p>
+                            
+                            <a href=""><mark> N</mark> pay 구매</a>
+                            <a href="">찜</a>
+                        </div>
+                        <div class="naver_icon">
+                            <span> <mark>앱출시</mark> 네이버페이앱으로 하세요! </span>
+                            <div class="icon_next">
+                                <a href="">	&#60; </a>
+                                <a href="">&#62; </a>
+                        </div>  
+                        </div>
+                                                 
+                    </div>
+                </div>
+                
+            </div>                
+        </section>
+
+        <div class="width1270">
+            <div class="gift">        
+                <img src="./img/order/워터보틀 (2).png" alt="">
+            </div>
+        </div>
+        
+        <section>
+            <div class="width1270">           
+                <p>
+                    네스카페® 돌체구스토® 머신을 위해 탄생한 아로마, 바디감, 풍미가 완벽한 밸런스를 
+                    이루는 풍성한 토피 향의 스타벅스® 하우스 블렌드를 만나보세요.
+                </p>
+                <div class="gift_bg">
+                    <img src="./img/order_ne/ne_2/woody.svg" alt="">
+                    <img src="./img/order_star/pc_recipes_main_img4.jpg" alt="">
+                </div>
+                
+            </div>                       
+            <div class="width1270">
+                <div class="order_coffee_beans">
+                    <div>
+                        <img src="./img/order/버츄오.png" alt="">
+                        <mark>원산지</mark>
+                        <p>
+                            아라비카 커피원두 100% 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/order/coffee-beans (1).png" alt="">
+                        <mark>로스팅</mark>
+                        <p>다년간의 연구와 전문 노하우로 완성된 스타벅스™만의 로스팅 스펙트럼은 스타벅스® 블론드 로스트, 미디엄 로스트, 다크 로스트로 이루어져 있습니다. 각각의 커피 원두는 최상의 아로마, 산미, 바디감, 풍미를 갖출 수 있도록 원두에 적합한 최적의 시간과 온도를 적용하였습니다.</p>
+                    </div>
+                    <div>
+                        <img src="./img/order/coffee-beans (2).png" alt="">
+                        <mark>아로마 프로파일</mark>
+                        <p> 풍부함과 토피넛향</p>
+                    </div>
+                </div>
+                
+        </div>          
+        </section>
+
+        <section class="text_click">
+            <div class="width1270">
+                <div class="order_click">
+                    <h4>성분 및 알레르기</h4>
+                </div>
+                <ul>
+                    <li>
+                    한글 제품명 (공식)
+                    <span> 스타벅스® 하우스 블렌드</span>
+                    </li>
+                
+                    <li>
+                    식품유형
+                    <span>커피</span>
+                    </li>
+
+                    <li>
+                    제조사
+                    <span>Nestle Nespresso S.A.  </span>
+                    </li>
+                    
+                    <li>
+                    수입판매원
+                    <span>네슬레코리아 유한책임회사</span>
+                    </li>
+                    
+                    <li>
+                    제조국
+                    <span>스위스</span>
+                    </li>
+                    
+                    <li>
+                    유통기한
+                    <span>제품 측면에 별도 표기일까지(읽는법: 일.월.년순) </span>
+                    </li>
+                    
+                    <li>
+                    총중량(g)
+                    <span> 66 g (5.5 g x 12개)</span>
+                    </li>
+                    
+                    <li>
+                    원재료명 및 함량
+                    <span>커피원두 100%</span>
+                    </li>
+                    
+                    <li>
+                    소비자상담 관련 전화번호
+                    <span>네스프레소 전용 클럽 080 734 1111 (24시간, 365일/ 수신자 부담) </span>
+                    </li>
+                    
+                    <li>
+                    보관방법
+                    <span>직사광선을 피하여 건조하고 서늘한 실온에 보관</span>
+                    </li>
+                    
+                    <li>
+                    포장재질
+                    <span>폴리프로필렌</span>
+
+
+
+                    
+                    <li>
+                    ※ 수입 식품 안전 관리 특별법에 의한 수입신고를 필함<br>
+                    ※ 본 제품은 공정거래위원회 고시 소비자 분쟁 해결 기준에 의거, 교환 또는 보상 받으실 수 있습니다.<br>
+                    ※ 부정, 불량식품 신고는 국번없이 1399
+                    </li>              
+                </ul>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="width1900">
+                <div class="footer_span">
+                    <p>상호 : Deeply 대표자 : 박수빈 등록번호 : 110-86-10100
+                        <span>통신판매업신고 2014 서울서대문0247 </span> <br>
+                        이메일 : deeply@naver.com 주소 : 경기도 화성시 봉담읍 삼천병마로 1182
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

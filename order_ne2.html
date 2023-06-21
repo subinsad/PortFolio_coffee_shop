@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'egm2vlw',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+      <script>
+
+        $(document).ready(function(){
+            $('.order_click h4').click(function(){
+                if($('.text_click ul').hasClass('active')){
+                    $('.text_click ul').css('display','none');
+                    $('.order_click h4').removeClass('active');
+                    $('.text_click ul').removeClass('active');
+                }else{
+                    $('.text_click ul').addClass('active');
+                    $('.order_click h4').addClass('active');
+                    $('.text_click ul').css('display','block');
+                }                
+            })
+        })
+      </script>
+
+</head>
+<body>
+    <div class="wrap_order">
+        <header>
+            <ul>
+                <li> <a href="./login.jsp">LOGIN </li></a>
+                <li> <a href="./cart.html">CART </li></a>
+                <li> <a href="./mypage_order.html">ORDER </li></a>
+                <li> <a href="./join_ok_d.jsp">JOIN </li></a>
+                <li> <a href="./mypage.html">MY PAGE </li></a>
+            </ul>
+            <div>
+                <h1>
+                    <a href="./index.jsp">
+                        <img src="./img/main/logo-fin.png" alt="">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul class="header_nav">
+                        <li class="dropdown">
+                            <a href="">스토리</a>
+                            <ul>
+                                <li><a href="./story.html">소개</a></li>
+                                <li><a href="./coffee.html">커피용어</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">커피캡슐</a>
+                              <ul>
+                                <li><a href="./product_home.html">네스프레소</a></li>
+                                <li><a href="./product_home_illy.html">일리</a></li>
+                                <li><a href="./product_home_star.html">스타벅스</a></li>
+                              </ul>        
+                          </li>
+                          <li class="dropdown">
+                            <a href="">레시피</a>
+                              <ul>
+                                <li><a href="./bbs.jsp">게시판</a></li>
+                                <li><a href="./best_recipe1.html">구매하기</a></li>
+                              </ul>        
+                          </li>
+                          <li>
+                            <a href="./brand.html">재활용</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="">고객센터</a>
+                            <ul>
+                                <li><a href="./f&q.html">faq</a></li>
+                                <li><a href="./event.html">news</a></li>
+                              </ul>   
+                          </li>
+                        </ul>
+                      </nav>
+            </div>
+        </header>               
+
+        <section class="product_order">
+            <div class="width1270">
+                <div class="product_order_img">
+                    <img src="./img/order_ne/ne_1/bianco-forte-XL.png" alt="">
+                </div>    
+                <div class="product_text">
+                    <h2> 비앙코 포르테 </h2>
+                    <p>밀크 레시피를 위한 강렬한 풍미의 커피</p>
+                    <mark> 939원 </mark>
+                    <table>
+                        <tr>
+                            <td> 
+                                <p>1 슬리브 (10캡슐, 최소주문수량):</p> 
+                            </td>
+                            <td>
+                                <input type="number" name="" value="1">
+                            </td>
+                            <td>
+                                <p>939원</p>
+                            </td>
+                        </tr>                    
+                    </table>
+                    <div class="total">
+                        <span>total</span>
+                        <mark>9,390원</mark>
+                        <p> (10개) </p>
+                    </div>
+                    
+                    <div class="buybox">
+                        <a href=""> 구매하기</a>
+                        <a href=""> 장바구니 </a>
+                        <a href=""> 관심상품 </a>
+                    </div>
+
+                    <div class="naver">
+                        <div class="pay">
+                            <p>naver<br>
+                                <span> 네이버id로 간편구매<br>
+                                네이버페이</span>
+                            </p>
+                            
+                            <a href=""><mark> N</mark> pay 구매</a>
+                            <a href="">찜</a>
+                        </div>
+                        <div class="naver_icon">
+                            <span> <mark>앱출시</mark> 네이버페이앱으로 하세요! </span>
+                            <div class="icon_next">
+                                <a href="">	&#60; </a>
+                                <a href="">&#62; </a>
+                        </div>  
+                        </div>
+                                                 
+                    </div>
+                </div>
+                
+            </div>                
+        </section>
+
+        <div class="width1270">
+            <div class="gift">        
+                <img src="./img/order/워터보틀 (2).png" alt="">
+            </div>
+        </div>
+        
+        <section>
+            <div class="width1270">
+                <h3><img src="./img/order_ne/ne_1/logo-forte.svg" alt=""></h3>
+                
+                <p>
+                    비앙코 포르테는 진하면서도 우유와 완벽하게 어우러지는 230ml 사이즈의 
+                    시그니처 커피 입니다. 콜롬비아와 케냐산 아라비카를 엄선하여 각각 대조적인 
+                    방식으로 개별 로스팅한 커피로, 우유화 함께하면 우유의 고소함과 어울리는 진한 
+                    로스팅향과 곡물향을 끝까지 즐길 수 있습니다.
+
+                </p>
+                <div class="gift_bg">
+                    <img src="./img/order_ne/ne_1/Milk.svg" alt="">
+                    <img src="./img/order_ne/ne_1/recipes-bg.jpg" alt="">
+                </div>
+                
+            </div>                       
+            <div class="width1270">
+                <div class="order_coffee_beans">
+                    <div>
+                        <img src="./img/order/버츄오.png" alt="">
+                        <mark>원산지</mark>
+                        <p>
+                            다양한 원산지의 커피를 블렌딩해 얻을 수 있는 조합은 셀 수 없이 많습니다. 
+                            그러나 커피와 우유와의 조합은 운에 맡길 수 없었습니다. 네스프레소는 우유를 첨가할 때 
+                            절묘한 균형을 이루는 맛과 향의 조화를 위해 콜롬비아와 케냐산 아라비카를 선택했습니다. 
+                            바리스타 크리에이션 비앙코 포르테는 최적의 로스팅 강도로 우유의 달콤함을 끝까지 즐기실 
+                            수 있습니다.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/order/coffee-beans (1).png" alt="">
+                        <mark>로스팅</mark>
+                        <p>다양한 원산지의 커피를 블렌딩해 얻을 수 있는 조합은 셀 수 없이 많습니다. 그러나 커피와 우유와의 조합은 운에 맡길 수 없었습니다. 네스프레소는 우유를 첨가할 때 절묘한 균형을 이루는 맛과 향의 조화를 위해 콜롬비아와 케냐산 아라비카를 선택했습니다. 바리스타 크리에이션 비앙코 포르테는 최적의 로스팅 강도로 우유의 달콤함을 끝까지 즐기실 수 있습니다.</p>
+                    </div>
+                    <div>
+                        <img src="./img/order/coffee-beans (2).png" alt="">
+                        <mark>아로마 프로파일</mark>
+                        <p> 이 커피는 멜버른의 바리스타들에게 영감을 받았습니다. 이들은 강렬하면서도 완벽하게 균형잡힌 맛을 선사하는 전문가입니다. 우유를 첨가한 비앙코 포르테는 한밤의 희미한 빛 줄기처럼 한 모금만으로도 강렬한 로스팅의 맛이 우유를 통해 살아나는 것을 느낄 수 있습니다. 진하고 풍부한 바디감과 함께 풍부한 로스팅향과 곡물향이 살아납니다. 커피의 독특한 쓴맛은 우유를 만나 부드럽게 느껴집니다.</p>
+                    </div>
+                </div>
+                
+        </div>          
+        </section>
+
+        <section class="text_click">
+            <div class="width1270">
+                <div class="order_click">
+                    <h4>성분 및 알레르기</h4>
+                </div>
+                <ul>
+                    <li>
+                    한글 제품명 (공식)
+                    <span>네스프레소® 버츄오 바리스타 크리에이션 비앙코 포르테</span>
+                    </li>
+                
+                    <li>
+                    식품유형
+                    <span>커피</span>
+                    </li>
+
+                    <li>
+                    제조사
+                    <span>Nestle Nespresso S.A.  </span>
+                    </li>
+                    
+                    <li>
+                    수입판매원
+                    <span>네슬레코리아 유한책임회사</span>
+                    </li>
+                    
+                    <li>
+                    제조국
+                    <span>스위스</span>
+                    </li>
+                    
+                    <li>
+                    유통기한
+                    <span>제품 측면에 별도 표기일까지(읽는법: 일.월.년순) </span>
+                    </li>
+                    
+                    <li>
+                    총중량(g)
+                    <span>105g(10.5gx10)</span>
+                    </li>
+                    
+                    <li>
+                    원재료명 및 함량
+                    <span>커피원두 100%</span>
+                    </li>
+                    
+                    <li>
+                    소비자상담 관련 전화번호
+                    <span>네스프레소 전용 클럽 080 734 1111 (24시간, 365일/ 수신자 부담) </span>
+                    </li>
+                    
+                    <li>
+                    보관방법
+                    <span>직사광선을 피하여 건조하고 서늘한 실온에 보관</span>
+                    </li>
+                    
+                    <li>
+                    포장재질
+                    <span>바디-알루미늄/코팅-폴리프로필렌(내면)</span>
+
+
+
+                    
+                    <li>
+                    ※ 수입 식품 안전 관리 특별법에 의한 수입신고를 필함<br>
+                    ※ 본 제품은 공정거래위원회 고시 소비자 분쟁 해결 기준에 의거, 교환 또는 보상 받으실 수 있습니다.<br>
+                    ※ 부정, 불량식품 신고는 국번없이 1399
+                    </li>              
+                </ul>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="width1900">
+                <div class="footer_span">
+                    <p>상호 : Deeply 대표자 : 박수빈 등록번호 : 110-86-10100
+                        <span>통신판매업신고 2014 서울서대문0247 </span> <br>
+                        이메일 : deeply@naver.com 주소 : 경기도 화성시 봉담읍 삼천병마로 1182
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brand</title>
+    <link rel="stylesheet" href="./css/import.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- 폰트 -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'egm2vlw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- 슬라이더 -->
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 1270,
+                slideMargin: 0
+            });
+        });
+    </script>
+
+    <style>
+        .bx-wrapper {
+            margin: 0 auto;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: #e6dfd4;
+            border: none;
+        }
+
+        .bx-wrapper .bx-prev {
+            background-image: url(./img/brand/left-arrow.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100px;
+            background-position: 0;
+        }
+
+        .bx-wrapper .bx-next {
+            background-image: url(./img/brand/right-arrow.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100px;
+            background-position: 0;
+        }
+
+        .brand_1 .bx-wrapper .bx-pager.bx-default-pager a {
+            display: block;
+            width: 50px;
+            height: 3px;
+            margin: 55px 15px;
+            outline: 0;
+            background: black;
+        }
+
+        .bx-wrapper .bx-next:hover {
+            background-position: 0;
+        }
+
+        /* 슬라이더 선택된부분 흰색으로 변경 */
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: white;
+        }
+
+        a.bx-pager-link.active {
+            background: white;
+        }
+
+        /* 두번째 슬라이더 */
+
+        .brand_2 .bx-viewport {
+            height: 495px;
+        }
+
+        /* 슬라이더 넘기는 모양 */
+
+        .bx-wrapper .bx-controls-direction a {
+            width: 60px;
+        }
+
+        .brand_2 .bx-wrapper .bx-prev {
+            left: 740px;
+            margin-top: 195px;
+            background-size: cover;
+        }
+
+        .brand_2 .bx-wrapper .bx-next {
+            right: 110px;
+            ;
+            margin-top: 195px;
+            background-position: 0;
+        }
+
+        .brand_2 .bx-wrapper .bx-pager {
+            bottom: 30px;
+            margin-left: 640px;
+            width: 50%;
+        }
+
+        .brand_2 .bx-wrapper .bx-pager.bx-default-pager a {
+            border: 1px black solid;
+            background: none;
+        }
+
+        .brand_2 .bx-wrapper .bx-pager-item {
+            padding: 0 30px;
+        }
+
+        /* 페이지 동그라미 */
+        .brand_2 .bx-wrapper .bx-pager.bx-default-pager a {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        .brand_2 .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: black;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="wrap_brand">
+        <header>
+            <ul>
+                <li> <a href="./login.jsp">LOGIN </li></a>
+                <li> <a href="./cart.html">CART </li></a>
+                <li> <a href="./mypage_order.html">ORDER </li></a>
+                <li> <a href="./join.html">JOIN </li></a>
+                <li> <a href="./mypage.html">MY PAGE </li></a>
+            </ul>
+            <div>
+                <h1>
+                    <a href="./index.jsp">
+                        <img src="./img/main/logo-fin.png" alt="">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul class="header_nav">
+                        <li class="dropdown">
+                            <a href="">스토리</a>
+                            <ul>
+                                <li><a href="./story.html">소개</a></li>
+                                <li><a href="./coffee.html">커피용어</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">커피캡슐</a>
+                              <ul>
+                                <li><a href="./product_home.html">네스프레소</a></li>
+                                <li><a href="./product_home_illy.html">일리</a></li>
+                                <li><a href="./product_home_star.html">스타벅스</a></li>
+                              </ul>        
+                          </li>
+                          <li class="dropdown">
+                            <a href="">레시피</a>
+                              <ul>
+                                <li><a href="./bbs.jsp">게시판</a></li>
+                                <li><a href="./best_recipe1.html">구매하기</a></li>
+                              </ul>        
+                          </li>
+                          <li>
+                            <a href="./brand.html">재활용</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="">고객센터</a>
+                            <ul>
+                                <li><a href="./f&q.html">faq</a></li>
+                                <li><a href="./event.html">news</a></li>
+                              </ul>   
+                          </li>
+                        </ul>
+                      </nav>
+            </div>
+        </header>       
+
+        
+
+        <section class="brand_2">
+            <div>
+                <h2>we make green moments <br>
+                    <span>네스프레소의 재활용 프로그램</span>
+                </h2>
+            </div>
+            <p> 네스프레소의 커피캡슐은 네스프레소에서 수거한뒤 재활용이 됩니다.<br>
+                네스프레소의 재활용프로그램에 참여해보세요.
+            </p>
+
+            <div class="bxslider" style="color: black;">
+                <div>
+                    <div class="bxslider_img">
+                        <img src="./img/brand/img_moments_01.webp" width="100%">
+                    </div>
+                    <div class="slider_text">
+                        <h3> coffee to farm </h3>
+                        <p> 네스프레소 코리아는 사용한 캡슐을 수거해 알루미늄과
+                            커피가루로 분류하고 재활용하는 프로그램을
+                            운영하고 있습니다.
+
+                            분리된 커피 가루는 우리의 일상을 풍요롭게 만드는
+                            농작물의 밑거름으로 재활용됩니다.
+                            사용한 커피 캡슐에 새로운 시작을 선물하세요<br>
+
+                            *네스프레소 커피 비료로 재배된 식재로를 사용한
+                            특별한 메뉴를 스타 레스토랑 '라망 시크레'에서 만나보세요
+                            <br>
+                            (기간:20201년 9월 9일 ~ 9월 10일)<br>
+                            *사정에 따라 일정은 변경 및 취소될 수 있습니다
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bxslider_img">
+                        <img src="./img/brand/img_moments_02.webp" width="91%">
+                    </div>
+                    <div class="slider_text">
+                        <h3> 네스프레소의 2022 탄소 중립 약속</h3>
+                        <p> 네스프레소는 2022년까지 모든 네스프레소커피의 '탄소중립화'를 목표로 합니다.
+                            기업 운영에서의 탄소 배출량 저감은 물론,나무 심기, 산림 보호 프로젝트 등을 통해
+                            기후 변화 개선에 기여합니다.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bxslider_img">
+                        <img src="./img/brand/img_moments_03.webp" width="97%">
+                    </div>
+                    <div class="slider_text">
+                        <h3>네스프레소 AAA 지속가능한품질™ 프로그램</h3>
+                        <p>네스프레소AAA 지속가능한품질™ 프로그램의'AAA'란 커피의 '품질'과'생산성' 그리고
+                            환경과 사회의 '지속가능성'을 모두A등급 수준으로 관리한다는 의미를 담고 있습니다.
+                            이 프로그램을 통해서 커피 농부들이좋은 커피를 재배하는 것만으로도안정된 삶을 살 수 있도록 돕고 있습니다.</p>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="brand_3">
+            <div>
+                <h2>재활용이 가능한 네스프레소 커피 캡슐</h2>
+                <p>네스프레소의 알루미늄 캡슐은 커피를 산소, 습도, 빛으로부터<br>
+                    완벽하게 보호해 최상의 커피 경험을 선사하여, 재활용이 가능합니다.
+                </p>
+                <div class="width1270">
+                    <img src="./img/brand/brand_bg_2.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <div class="brand_bg">
+            <p>네스프레소와 당신이 함께 만든 긍정적인 변화를 확인해 보세요</p>
+        </div>
+
+
+        <section class="brand_4">
+            <div class="width1270">
+                <div>
+                    <h2>환경을 위한 최상의 소재 알루미늄 캡슐</h2>
+                    <p>알루미늄은 커피의 신선도와 아로마를 보전하는 최상의 소재로
+                        커피의 품질을 떨어뜨리는 외부 요소인 산소, 습도, 빛으로부터
+                        완벽하게 커피를 보호하며, 무한히 재활용 가능합니다.
+                    </p>
+                    <img src="./img/brand/img_capsule.png" alt="">
+                    <img src="./img/brand/흰icon.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <div class="brand_bg">
+            <p>네스프레소 캡슐 재활용 여정에 동참해주세요.</p>
+        </div>
+
+        <section class="brand_5">
+            <div class="width1270">
+                <div>
+                    <h2>네스프레소 재활용 참여방법</h2>
+                    <ul>
+                        <li><mark>1</mark>부티크에 직접 방문하여 반납</li>
+                        <li><mark>2</mark>커피 주문 시 재활용 백 수거를 신청하면 택배 기사가 방문하여 회수</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        
+
+        <footer>
+            <div class="width1900">
+                <div class="footer_span">
+                    <p>상호 : Deeply 대표자 : 박수빈 등록번호 : 110-86-10100
+                        <span>통신판매업신고 2014 서울서대문0247 </span> <br>
+                        이메일 : deeply@naver.com 주소 : 경기도 화성시 봉담읍 삼천병마로 1182
+                    </p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

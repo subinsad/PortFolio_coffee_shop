@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/import.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'egm2vlw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>board new2</title>
+</head>
+
+<body>
+
+    <div class="wrap_login">
+        <header>
+            <ul>
+                <li> <a href="./login.jsp">LOGIN </li></a>
+                <li> <a href="./cart.html">CART </li></a>
+                <li> <a href="./mypage_order.html">ORDER </li></a>
+                <li> <a href="./join_ok_d.jsp">JOIN </li></a>
+                <li> <a href="./mypage.html">MY PAGE </li></a>
+            </ul>
+            <div>
+                <h1>
+                    <a href="./index.jsp">
+                        <img src="./img/main/logo-fin.png" alt="">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul class="header_nav">
+                        <li class="dropdown">
+                            <a href="">스토리</a>
+                            <ul>
+                                <li><a href="./story.html">소개</a></li>
+                                <li><a href="./coffee.html">커피용어</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">커피캡슐</a>
+                              <ul>
+                                <li><a href="./product_home.html">네스프레소</a></li>
+                                <li><a href="./product_home_illy.html">일리</a></li>
+                                <li><a href="./product_home_star.html">스타벅스</a></li>
+                              </ul>        
+                          </li>
+                          <li class="dropdown">
+                            <a href="">레시피</a>
+                              <ul>
+                                <li><a href="./bbs.jsp">게시판</a></li>
+                                <li><a href="./best_recipe1.html">구매하기</a></li>
+                              </ul>        
+                          </li>
+                          <li>
+                            <a href="./brand.html">재활용</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="">고객센터</a>
+                            <ul>
+                                <li><a href="./f&q.html">faq</a></li>
+                                <li><a href="./event.html">news</a></li>
+                              </ul>   
+                          </li>
+                        </ul>
+                      </nav>
+            </div>
+        </header>        
+        <div class="width1270">
+            <h2 class="board_title"> 레시피 </h2>
+        </div>
+
+        <div class="board_new_wrap">
+            <div class="new1_box1">
+                <h3> 바닐라크림 라떼</h3>
+                <p> 수빈 22-10-06 23:50 조회 2 좋아요 0</p>
+            </div>
+
+            <div class="new1_box2">
+                레시피<br>
+                1. 에스프레소 1샷을 뽑아줍니다. 바닐라시럽과 샷을 섞어줍니다. <br>
+                2. 우유를 잔에 따라줍니다.<br>
+                3. 바닐라크림을 만들어줍니다. <br>
+                4. 우유위에 크림을 올려줍니다.<br>
+                5. 크림위에 샷을 넣어줍니다. 
+            </div>
+        </div>
+
+        <div class="new1_box3">
+            <p>댓글달기</p>
+            <input type="text" placeholder="댓글을 입력해주세요."> <br>
+
+            <a href="./board_list.html"><input type="button" value="뒤로가기"></a>
+        </div>
+        
+        
+
+        <footer>
+            <div class="width1900">
+                <div class="footer_span">
+                    <p>상호 : Deeply 대표자 : 박수빈 등록번호 : 110-86-10100
+                        <span>통신판매업신고 2014 서울서대문0247 </span> <br>
+                        이메일 : deeply@naver.com 주소 : 경기도 화성시 봉담읍 삼천병마로 1182
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
