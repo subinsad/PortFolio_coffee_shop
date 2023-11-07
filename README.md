@@ -8,7 +8,7 @@
 
 혼자 한 프로젝트 이며 커피의 깊은 맛을 알고 구매한다는 의미인 Deeply 사이트 입니다.
 
-👩‍💻 사용프로그램
+## 👩‍💻 사용프로그램
 
 퍼블리싱 - visual studio code / html, css, jquery, javascript
 백엔드 - eclipse, my sql, apache tomcat / java
